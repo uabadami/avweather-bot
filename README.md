@@ -11,9 +11,9 @@ TAF: KJFK 172336Z 1800/1906 28012G19KT P6SM FEW060 FM180600 29010KT P6SM FEW060.
 
 As shown above, neither of these crucial products are easily human-readable. This project uses Python to both retrieve and decode METARs and TAFs. Examples of how to do this are shown in ```examples.py```, and below (where "KABC" can be replaced by any valid airport code).
 
-Get a raw METAR: ```getMETAR("KABC")```
-Get a raw TAF: ```getTAF("KABC")```
-Get a decoded METAR: ```getDecodedMETAR("KABC")```
-Get a decoded TAF: ```getDecodedTAF("KABC")```
+- Get a raw METAR: ```getMETAR("KABC")```
+- Get a raw TAF: ```getTAF("KABC")```
+- Get a decoded METAR: ```getDecodedMETAR("KABC")```
+- Get a decoded TAF: ```getDecodedTAF("KABC")```
 
 Future work on this bot will include a "remarks" section decoder.
