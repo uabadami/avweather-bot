@@ -1,4 +1,4 @@
-# This file decodes METARs in an easy-to-read dictionary format
+# This file contains functions to decode TAFs in an easy-to-read dictionary format
 
 from getWeatherProducts import *
 from metarDecoder import *
@@ -175,5 +175,6 @@ def tafStrDecoder(tafStr):
         
     return decodedTAF
 
+# returns decoded TAF for a specific airport
 def getDecodedTAF(stationCode):
     return tafStrDecoder(getTAF(stationCode)) # get the decoded TAF

@@ -5,5 +5,7 @@ from getWeatherProducts import *
 from metarDecoder import *
 from tafDecoder import *
 
-print(getDecodedMETAR("KEWR")) # gets the latest weather (METAR) at Newark Int'l Airport
-print(getDecodedTAF("KEWR")) # gets the forecasted weather (TAF) at Newark Int'l Airport
+print(getMETAR("KEWR")) # gets the latest weather (METAR) at Newark Int'l Airport
+print(getDecodedMETAR("KEWR")) # decodes the METAR for Newark Int'l Airport
+print(getTAF("KEWR")) # gets the forecasted weather (TAF) at Newark Int'l Airport
+print(getDecodedTAF("KEWR")) # decodes the TAF for Newark Int'l Airport

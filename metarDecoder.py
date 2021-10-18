@@ -1,4 +1,4 @@
-# This file decodes METARs in an easy-to-read dictionary format
+# This file contains functions to decode METARs in an easy-to-read dictionary format
 
 from getWeatherProducts import *
 
@@ -163,7 +163,7 @@ def metarStrDecoder(metarStr):
     
     return decodedMETAR
 
-# return decoded METAR for a specific airport
+# returns decoded METAR for a specific airport
 def getDecodedMETAR (stationCode):
     decodedMETAR = metarStrDecoder(getMETAR(stationCode)) # get the decoded METAR
 
